@@ -12,9 +12,10 @@ var formulario = document.getElementById('formulario'),
 			error.innerHTML += '<li>Por favor completa el nombre</li>';
 
 			e.preventDefault();
-		} else {
+		} 
+		/*else {
 			error.style.display = 'none';
-		}
+		}*/
 	}
 
 	function validarCorreo(e){
@@ -53,6 +54,7 @@ var formulario = document.getElementById('formulario'),
 		}
 	}
 
+
 	function validarFormulario(e){
 		error.innerHTML = '';
 
@@ -63,4 +65,5 @@ var formulario = document.getElementById('formulario'),
 	}
 
 	formulario.addEventListener('submit', validarFormulario);
+	
 // }())
